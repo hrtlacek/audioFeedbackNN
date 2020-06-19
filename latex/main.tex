@@ -256,7 +256,7 @@
 		\begin{figure}[!h]
 		\begin{tikzpicture}
 			[align=center,node distance=1.5cm]
-			\node[dspnodeopen,dsp/label=top]  (inp) {$X[m-1, \omega]...X[n-k, \omega]$};
+			\node[dspnodeopen,dsp/label=top]  (inp) {$X[m-1, \omega]...X[m-k, \omega]$};
 			\node[block, below of=inp](cnn){time distributed CNN};
 			\node[block, below of=cnn](lstm){LSTM};
 			\node[block, below of=lstm](den){Dense};
